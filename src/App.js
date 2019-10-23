@@ -5,7 +5,7 @@ import './App.css';
 import ReactDOM from "react-dom";
 
 function App() {
-
+    // https://next.json-generator.com/NJMjzW_Yw
     axios.get('https://next.json-generator.com/api/json/get/NJMjzW_Yw').then(result => {
         ReactDOM.render(<Table data={result.data}/>, document.querySelectorAll('.App__data')[0]);
     }).catch(error => {
